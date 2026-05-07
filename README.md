@@ -7,8 +7,7 @@ End-to-end data pipeline that scrapes property listings from three Cyprus real e
 ### Dashboard — KPI & Charts
 | Dashboard | Cards | Map | Telegram |                                                                                                                                      
   |---|---|---|---|                                                                                                                                                             
-  | <img src="screenshots/dashboard.png" width="200"> | <img src="screenshots/listings-cards.png" width="200"> | <img src="screenshots/map-view.png" width="200"> | <img        
-  src="screenshots/telegram.jpg" width="200"> |
+  | <img src="screenshots/dashboard.png" width="200"> | <img src="screenshots/listing-cards.png" width="200"> | <img src="screenshots/map-view.png" width="200"> | <img src="screenshots/telegram.jpg" width="200"> |
 
 ---
 

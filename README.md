@@ -16,7 +16,7 @@ End-to-end data pipeline that scrapes property listings from three Cyprus real e
 ![Map View](screenshots/map-view.png)
 
 ### Telegram Notifications
-![Telegram](screenshots/telegram.png)
+![Telegram](screenshots/telegram.jpg)
 
 ---
 

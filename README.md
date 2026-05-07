@@ -12,13 +12,13 @@ End-to-end data pipeline that scrapes property listings from three Cyprus real e
 ![Dashboard](screenshots/dashboard.png)
 
 ### Listings — Card View
-![Listings Cards](screenshots/listings-cards.png)
+<img src="listings-cards.png" width="300"> 
 
 ### Map View with Clusters
-![Map View](screenshots/map-view.png)
+<img src="map-view.png" width="300"> 
 
 ### Telegram Notifications
-![Telegram](screenshots/telegram.jpg)
+<img src="telegram.jpg" width="300"> 
 
 ---
 

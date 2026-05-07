@@ -9,36 +9,14 @@ End-to-end data pipeline that scrapes property listings from three Cyprus real e
 ### Dashboard — KPI & Charts
 ![Dashboard](screenshots/dashboard.png)
 
-### Listings — Table View
-![Listings Table](screenshots/listings-table.png)
-
 ### Listings — Card View
 ![Listings Cards](screenshots/listings-cards.png)
 
 ### Map View with Clusters
 ![Map View](screenshots/map-view.png)
 
-### Cross-Source Matching
-![Match Modal](screenshots/match-modal.png)
-
-### Runner — Scraper Control Panel
-![Runner](screenshots/runner.png)
-
 ### Telegram Notifications
 ![Telegram](screenshots/telegram.png)
-
----
-
-## What This Project Demonstrates
-
-| Skill area | Details |
-|---|---|
-| **Web scraping** | Three scrapers with different anti-bot strategies: Playwright stealth (Cloudflare), Chrome DevTools Protocol (WAF bypass), plain HTTP (no protection) |
-| **Data engineering** | SQLite schema design, multi-source deduplication, automated data enrichment, backfill pipelines for coordinates and images |
-| **Analytics** | Statistical deal detection (below p25 EUR/m² per segment), price trend tracking, market segmentation by district/condition/type |
-| **Full-stack development** | Zero-dependency web server (stdlib `http.server`), single-file dashboard with real-time charts (Chart.js), interactive map (Leaflet.js), async job runner |
-| **Product thinking** | Cross-source listing matching with scoring algorithm, user workflow (favorites, comments, exclude, link), Telegram alert integration |
-| **Code quality** | Modular architecture (scraper/db/config/notify per source), idempotent migrations, graceful error handling, parameterised CLI tools |
 
 ---
 
@@ -131,13 +109,8 @@ Notifications trigger when a listing's EUR/m² falls below the **25th percentile
 .
 ├── server.py                 # Main dashboard server (zero dependencies)
 ├── dashboard.py              # Streamlit analytics dashboard (alternative UI)
-├── backfill_coords.py        # Geocoding pipeline
-├── backfill_images.py        # Image backfill pipeline
 ├── check_expired.py          # Expiration checker
 ├── check_coords.py           # Coordinate extraction validator
-├── export_larnaca.py         # Telegram export utility
-├── scrape_developers.py      # Developer/project scraper
-├── fetch_bazaraki.py         # Cloudflare bypass test script
 │
 ├── bazaraki/                 # Bazaraki.com scraper module
 │   ├── scraper.py            #   Playwright-based scraper
@@ -159,10 +132,6 @@ Notifications trigger when a listing's EUR/m² falls below the **25th percentile
 │   ├── db.py                 #   SQLite schema & CRUD
 │   └── __init__.py
 │
-├── data_usage/               # Jupyter notebooks (analytics prototypes)
-│   ├── datalake_catalog_draft.ipynb
-│   ├── top_dashboards.ipynb
-│   └── user_usage_pipeline.ipynb
 │
 └── screenshots/              # Screenshots for README
 ```
